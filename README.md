@@ -46,5 +46,38 @@ trL.read(8)
 trD.close()
 trL.close()
 ```
+<p> Similar code is written and used for test data.<br>
+  The pointer goes to the first image and lable once we read 16 elements of training data and 8 elements of training labels (same approach applies for testing). Using OpenCV to visualize images and compare them with labels helped to get feedback for it<br>
+</p>
+<p>
+  Since each image (training example) is made of 28*28 pixels, I wrote the following code to extract instances:
+</p>
 
- 
+```
+length=28*28
+instance = np.frombuffer(trD.read(length),'uint8').reshape(length,1)
+```
+<p>Now we can visualize each instance or use it for training</p>
+
+<h2>How To Use The Python Code</h2>
+<p>
+  <ol>
+    <li>Make an object of <b><em>NeuralNets</em></b> class as I did in the main function.</li>
+    <li>Train the object by calling the <b><i>train()</i></b> method.</li>
+    <li>Test trained parameters and get accuracy by calling the <b><i>test()</b></i> method</li>
+  </ol>
+</p>
+<h2>Feedforward and Backpropagation</h2>
+<p>
+  Once you run the <b><i>train()</i></b> method, it will initialize the neural network with <b><i>initNet()</b></i> method and could show images with their labels by calling the <b><i>show()</b></i> method. 
+</p>
+<p>Here is a sample of the show() method that shows a testing sample, its label at the top left and its index at bottom left.<br>
+<img src="Images/MNIST.png" alt="Test Example Picture">
+</p>
+<p>
+  There are two mehtods I wrote for feedforward and backpropagation and they are called in each iteration if training for all 60000 instances. For testing although, only feedforward is used to test the test data. 
+</p>
+<h2>Manipulation</h2>
+You can change size and number of hiddenlayers and the learning rate alpha. In my experience, using more layers makes the processing time of eash iteration longer but gradient descent would converge in fewer iterations. One other change that could reduce mathematical complexity and avoid stucking at steps with low sigmoid derivetives is to write ReLU or Leaky ReLU instead of
+
+
