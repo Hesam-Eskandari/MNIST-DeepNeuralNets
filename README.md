@@ -2,7 +2,7 @@
 Handwritten Digit Recognition With MNIST Database - Deep Neural Network With Python 3.8
 
 <h2> MNIST Database</h2>
-<p>This database includes 60,000 training examples and 10,000 test samples with labels. Each instance is a 28 by 28 pixels grayscale image. Download the ".gz" files from the <a href="http://yann.lecun.com/exdb/mnist/" target="_blank">MNIST</a> directory. For ".gz" files you need to download are:</p>
+<p>This database includes 60,000 training examples and 10,000 test samples with labels. Each instance is a 28 by 28 pixels grayscale image. Download the ".gz" files from the <a href="http://yann.lecun.com/exdb/mnist/" target="_blank">MNIST</a> directory. The ".gz" files you need to download are:</p>
 <ul>
   <li>Training Examples: "train-images-idx3-ubyte.gz"</li>
   <li>Training Labels: "train-labels-idx1-ubyte.gz"</li>
