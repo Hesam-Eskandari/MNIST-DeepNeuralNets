@@ -71,7 +71,7 @@ instance = np.frombuffer(trD.read(length),'uint8').reshape(length,1)
 <p>
   Once you run the <b><i>train()</i></b> method, it will initialize the neural network with <b><i>initNet()</b></i> method and could show images with their labels by calling the <b><i>show()</b></i> method. 
 </p>
-<p>Here is a sample of the show() method that shows a testing sample, its label at the top left and its index at bottom left.<br>
+<p>Here is a sample of the <b><i>show()</b></i> method that shows a testing sample, its label at the top left and its index at bottom left.<br>
 <img src="Images/MNIST.png" alt="Test Example Picture">
 </p>
 <p>
@@ -84,5 +84,5 @@ instance = np.frombuffer(trD.read(length),'uint8').reshape(length,1)
 <p>
   One observation confirmed that convergence is faster if size of the last hidden layer is close to the size of output layer.
 </p>
-
+<h3>Accuracy on test samples: 91%</h3>
 
