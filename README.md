@@ -11,7 +11,7 @@ Handwritten Digit Recognition With MNIST Database - Deep Neural Network With Pyt
 </ul>
 
 <h2> Python Libraries </h2>
-<p>We tried to implemet Neural Network functions and not to use libraries functions such as TensorFlow in this project. Because TensorFlow would make it simle without fully understading the mathematical level. We used hte following libraries:</p>
+<p>I tried to implemet Neural Network functions and not to use libraries functions such as TensorFlow in this project. Because TensorFlow would make it simple without fully understading the mathematical level. We used hte following libraries:</p>
 <ul>
   <li>numpy as np: for matrix computations</li>
   <li>gzip: to open database files</li>
