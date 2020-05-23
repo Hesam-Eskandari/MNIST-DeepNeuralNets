@@ -78,6 +78,6 @@ instance = np.frombuffer(trD.read(length),'uint8').reshape(length,1)
   There are two mehtods I wrote for feedforward and backpropagation and they are called in each iteration if training for all 60000 instances. For testing although, only feedforward is used to test the test data. 
 </p>
 <h2>Manipulation</h2>
-You can change size and number of hiddenlayers and the learning rate alpha. In my experience, using more layers makes the processing time of eash iteration longer but gradient descent would converge in fewer iterations. One other change that could reduce mathematical complexity and avoid stucking at steps with low sigmoid derivetives is to write ReLU or Leaky ReLU instead of
+You can change size and number of hiddenlayers and the learning rate alpha. In my experience, using more layers makes the processing time of each iteration longer but gradient descent would converge in fewer iterations. One other change that could reduce mathematical complexity and avoid stucking at steps with low sigmoid derivetives is to write ReLU or Leaky ReLU instead of the sigmoid function.
 
 
